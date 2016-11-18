@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="18a3c6ba-7ca3-4518-897b-aae0e218debc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://webstrar8.fulton.asu.edu/page5/POIService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="POIService.disco" MetadataType="Disco" ID="b598a7f1-9928-46ab-a50a-ce3781634b7c" SourceId="1" SourceUrl="http://webstrar8.fulton.asu.edu/Page5/POIService.svc?disco" />
+    <MetadataFile FileName="POIService.xsd" MetadataType="Schema" ID="d27c23dd-09e7-44f1-98e2-f610511063c9" SourceId="1" SourceUrl="http://webstrar8.fulton.asu.edu/Page5/POIService.svc?xsd=xsd0" />
+    <MetadataFile FileName="POIService1.xsd" MetadataType="Schema" ID="37dfd34d-baa5-48fc-b422-0ba33e35434b" SourceId="1" SourceUrl="http://webstrar8.fulton.asu.edu/Page5/POIService.svc?xsd=xsd1" />
+    <MetadataFile FileName="POIService2.xsd" MetadataType="Schema" ID="c6400e5d-72ff-45b0-aa47-c6c785714b13" SourceId="1" SourceUrl="http://webstrar8.fulton.asu.edu/Page5/POIService.svc?xsd=xsd2" />
+    <MetadataFile FileName="POIService.wsdl" MetadataType="Wsdl" ID="28d63f98-f1da-480c-a6f1-0da8c1cfc250" SourceId="1" SourceUrl="http://webstrar8.fulton.asu.edu/Page5/POIService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

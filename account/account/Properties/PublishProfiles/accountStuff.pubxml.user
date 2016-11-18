@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Hans\Desktop\Project5\build</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>11/12/2016 10:32:51</publishTime>
+    </File>
+    <File Include="App_Data/Member.xml">
+      <publishTime>11/17/2016 00:55:56</publishTime>
+    </File>
+    <File Include="auth.svc">
+      <publishTime>11/14/2016 02:07:18</publishTime>
+    </File>
+    <File Include="bin/account.dll">
+      <publishTime>11/17/2016 00:59:39</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>11/12/2016 10:32:51</publishTime>
+    </File>
+    <File Include="bin/CryptorEngine.dll">
+      <publishTime>11/14/2016 04:59:52</publishTime>
+    </File>
+    <File Include="bin/EncryptDecrypt.dll">
+      <publishTime>11/17/2016 00:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/12/2016 10:32:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>11/12/2016 10:32:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>11/12/2016 10:32:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>11/12/2016 10:32:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>11/12/2016 10:32:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>11/12/2016 10:32:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>11/12/2016 10:32:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>11/12/2016 10:32:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/12/2016 10:32:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/12/2016 10:32:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/12/2016 10:32:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/12/2016 10:32:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/12/2016 10:32:23</publishTime>
+    </File>
+    <File Include="css/register.css">
+      <publishTime>11/12/2016 12:42:43</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>11/16/2016 21:00:46</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/12/2016 10:32:20</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>11/16/2016 22:23:35</publishTime>
+    </File>
+    <File Include="member.aspx">
+      <publishTime>11/17/2016 00:56:31</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/12/2016 10:32:53</publishTime>
+    </File>
+    <File Include="register.aspx">
+      <publishTime>11/13/2016 11:21:36</publishTime>
+    </File>
+    <File Include="scripts/ai.0.15.0-build58334.js">
+      <publishTime>11/12/2016 10:32:53</publishTime>
+    </File>
+    <File Include="scripts/ai.0.15.0-build58334.min.js">
+      <publishTime>11/12/2016 10:32:52</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>11/12/2016 13:36:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/16/2016 21:38:09</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
