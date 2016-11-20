@@ -140,5 +140,16 @@ namespace account
         {
             Response.Redirect("~/default.aspx");
         }
+
+        // Invoke for crime service
+        protected void ButtonCA_Click(object sender, EventArgs e)
+        {
+            CrimeService.Service1Client crimeClient = new CrimeService.Service1Client();
+
+            int value = crimeClient.GetCrimeData(TextBoxCA.Text);
+            LabelCA.Text = value.ToString();
+            
+            crimeClient.Close();
+        }
     }
 }
