@@ -58,6 +58,33 @@ namespace account {
         protected global::System.Web.UI.WebControls.Label lblPOI;
         
         /// <summary>
+        /// TextBoxCA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxCA;
+        
+        /// <summary>
+        /// ButtonCA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonCA;
+        
+        /// <summary>
+        /// LabelCA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCA;
+        
+        /// <summary>
         /// tb_encrypt control.
         /// </summary>
         /// <remarks>

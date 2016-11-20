@@ -46,7 +46,7 @@
             <asp:TableCell>String, int</asp:TableCell>
             <asp:TableCell>List of Strings</asp:TableCell>
             <asp:TableCell>Enter an address and a distance &#60;= 50,000 meters to get a list of up to 20 nearby restaurants!</asp:TableCell>
-            <asp:TableCell>Link Here</asp:TableCell>
+            <asp:TableCell><a href="member.aspx">Member Page</a></asp:TableCell>
            </asp:TableRow>
             <asp:TableRow>
             <asp:TableCell>Natural Hazards</asp:TableCell>
@@ -56,7 +56,7 @@
             <asp:TableCell>String, String</asp:TableCell>
             <asp:TableCell>int</asp:TableCell>
             <asp:TableCell>Enter a latitude and a longitude to get a count of the number of natural hazards in the area!</asp:TableCell>
-            <asp:TableCell>Link Here</asp:TableCell>
+            <asp:TableCell><a href="member.aspx">Member Page</a></asp:TableCell>
            </asp:TableRow>
             <asp:TableRow>
             <asp:TableCell>Weather Service</asp:TableCell>
@@ -66,7 +66,7 @@
             <asp:TableCell>String, String</asp:TableCell>
             <asp:TableCell>String [ ]</asp:TableCell>
             <asp:TableCell>Enter a starting address and an ending address to get the travel distance between the locations!</asp:TableCell>
-            <asp:TableCell>Link Here</asp:TableCell>
+            <asp:TableCell><a href="member.aspx">Member Page</a></asp:TableCell>
            </asp:TableRow>
             <asp:TableRow>
             <asp:TableCell>Travel Calculator</asp:TableCell>
@@ -76,7 +76,7 @@
             <asp:TableCell>String, String</asp:TableCell>
             <asp:TableCell>String</asp:TableCell>
             <asp:TableCell>Enter a starting address and an ending address to get the travel distance between the locations!</asp:TableCell>
-            <asp:TableCell>Link Here</asp:TableCell>
+            <asp:TableCell><a href="member.aspx">Member Page</a></asp:TableCell>
            </asp:TableRow>
             </asp:Table>
           			<div class="login-register">

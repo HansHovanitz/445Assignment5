@@ -99,6 +99,13 @@
   <ItemGroup>
     <Content Include="App_Data\Member.xml" />
     <Content Include="css\register.css" />
+    <None Include="Service References\CrimeService\configuration.svcinfo" />
+    <None Include="Service References\CrimeService\configuration91.svcinfo" />
+    <None Include="Service References\CrimeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference1.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CrimeService\Service1.disco" />
     <Content Include="serviceDirectory.aspx" />
     <Content Include="login.aspx" />
     <Content Include="member.aspx" />
@@ -116,6 +123,13 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ClosestRestaurantAndNaturalHazards\ClosestRestaurantAndNaturalHazardsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CrimeService\Service1.wsdl" />
+    <None Include="Service References\CrimeService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CrimeService\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\NationalWeather\NationalWeatherService.wsdl" />
@@ -193,6 +207,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service References\CrimeService\Reference.cs" />
+    <Compile Include="Service References\CrimeService\Reference1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="serviceDirectory.aspx.cs">
       <DependentUpon>serviceDirectory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

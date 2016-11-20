@@ -23,7 +23,21 @@
         <asp:Label ID="lblPOI" runat="server" Text="POI list will appear here"></asp:Label>
         <br />
         <br />
+<<<<<<< HEAD
 
+=======
+        <h3>Crime Area: Enter a Zipcode The result is a number representing the total number of crimes in that area.</h3>
+        <h4>&nbsp;GetCrimeData (String): int</h4>
+        <h4>URL of service: <a href="http://webstrar8.fulton.asu.edu/Page6/Service1.svc">http://webstrar8.fulton.asu.edu/Page6/Service1.svc</a></h4>
+        <br />
+        (Input) Enter a Zipcode:
+        <asp:TextBox ID="TextBoxCA" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="ButtonCA" runat="server" OnClick="ButtonCA_Click" Text="Invoke" />
+        <br />
+        (Output) Crime Number: <asp:Label ID="LabelCA" runat="server" Text="Crime Number will appear here"></asp:Label>
+        <br />
+>>>>>>> 294b17fc86dc79e8b7c54392181b686d3e5740df
         <h2>Components</h2>
         <h3>EncryptDecrypt DLL : Encrypt and Decrypt Passwords</h3>
         <h4>Encrypt (String, bool) : String </h4>

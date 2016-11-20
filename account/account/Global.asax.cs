@@ -11,6 +11,7 @@ namespace account
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            // Useful method stuff here
         }
     }
 }
