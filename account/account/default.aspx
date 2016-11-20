@@ -19,12 +19,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row main">
-        <div class="panel-heading">
-            <div class="panel-title text-center">
-                <h2 class="title">Welcome to the travel agency landing page! </h2>
-            </div>
-        </div>
+      <div class="panel-title text-center">
+          <h2 class="title">Welcome to the travel agency landing page! </h2>
+      </div>
       <!-- Begin Beverly Emmons' Code -->
       <div class="jumbotron">
          <div>

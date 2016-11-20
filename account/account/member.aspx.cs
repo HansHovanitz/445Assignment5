@@ -15,7 +15,7 @@ namespace account
   {
     protected void Page_Load(object sender, EventArgs e)
     {
-      if (Session.Count == 0 && Session["loggedIn"] != null) //user has not logged in
+      if (Session.Count == 0 && Session["loggedIn"] != "member" && Session["loggedIn"] != "staff") //user has not logged in
       {
         Response.Redirect("~/login.aspx");
       }
