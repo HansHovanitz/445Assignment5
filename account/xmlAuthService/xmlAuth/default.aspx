@@ -36,12 +36,6 @@
                         <a href="login.aspx" runat="server" class="btn btn-info">Member   Login
                         </a>
                     </div>
-                  </div>
-              <div class="row">
-                  <div class="col-md-6">
-                        <a href="#" runat="server" class="btn btn-info">Staff Page
-                        </a>
-                    </div>
                   <div class="col-md-6">
                         <a href="serviceDirectory.aspx" runat="server" class="btn btn-info">Service Directory
                         </a>

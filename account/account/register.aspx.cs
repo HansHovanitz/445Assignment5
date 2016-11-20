@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 //EncryptDecrypt DLL
 using EncryptDecrypt;
 
@@ -27,6 +23,15 @@ namespace account
             int resutlt = Convert.ToInt32(_registration.Registeration(txtusername.Text, txtemail.Text, _crypt.Encrypt(txtpassword.Text , true)));
             if (resutlt == 1)
             {
+                //Create new cookie for the new member - done by Beverly Emmons
+                HttpCookie newCookie = new HttpCookie("memberLogin");
+                newCookie["username"] = txtusername.Text;
+                newCookie["password"] = txtpassword.Text;
+                newCookie["email"] = txtemail.Text;
+                newCookie.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Add(newCookie);
+                //end Beverly's code
+
                 Response.Redirect("~/login.aspx");
             }
             else

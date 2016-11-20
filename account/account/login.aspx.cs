@@ -1,21 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 //EncryptDecrypt DLL
 using EncryptDecrypt;
 
 namespace account
 {
-    public partial class login : System.Web.UI.Page
+    public partial class login : Page
     {
         CryptionFunctions _crypt = new CryptionFunctions();
         int result = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            //If cookie has been set, auto fill the username for the member login - done by Beverly Emmons
+            HttpCookie myCookies = Request.Cookies["memberLogin"];
+            if ((myCookies != null) && (myCookies["username"] != ""))
+            {
+              txtusername.Text = myCookies["username"];
+            }
+            //End Beverly's Code
         }
 
 
@@ -24,6 +28,9 @@ namespace account
             //xmlAuth login = new xmlAuth();
             //Use xmlAuth as embedded component or as service. 
             xmlAuthServ.IauthClient login = new xmlAuthServ.IauthClient();
+
+            HttpCookie myCookies = Request.Cookies["memberLogin"];
+
             result = Convert.ToInt32(login.Login(txtusername.Text, _crypt.Encrypt(txtpassword.Text, true)));
             switch (result)
             {
@@ -35,6 +42,18 @@ namespace account
                     }
                 case 1:
                     {
+                        //If the user doesn't have a cookie on the browser,
+                        //Create a new cookie for them - done by Beverly Emmons
+                        if ((myCookies == null) || (myCookies["username"] == "") || myCookies["password"] == "")
+                        {
+                          HttpCookie newCookie = new HttpCookie("memberLogin");
+                          newCookie["username"] = txtusername.Text;
+                          newCookie["password"] = txtpassword.Text;
+                          newCookie.Expires = DateTime.Now.AddMonths(6);
+                          Response.Cookies.Add(newCookie);
+                        }
+                        //end Beverly's Code
+
                         Response.Redirect("~/member.aspx");
                         break;
                     }
@@ -46,7 +65,7 @@ namespace account
                     }
                 default:
                     {
-                        System.Console.WriteLine("Something Went Wrong");
+                        Console.WriteLine("Something Went Wrong");
                         break;
                     }
             }

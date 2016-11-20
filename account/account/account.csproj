@@ -99,6 +99,7 @@
   <ItemGroup>
     <Content Include="App_Data\Member.xml" />
     <Content Include="css\register.css" />
+    <Content Include="serviceDirectory.aspx" />
     <Content Include="login.aspx" />
     <Content Include="member.aspx" />
     <Content Include="packages.config" />
@@ -107,6 +108,26 @@
     </Content>
     <Content Include="register.aspx" />
     <None Include="Properties\PublishProfiles\accountStuff.pubxml" />
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\ClosestRestaurantAndNaturalHazardsService.wsdl" />
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\ClosestRestaurantAndNaturalHazardsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\ClosestRestaurantAndNaturalHazardsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\ClosestRestaurantAndNaturalHazardsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NationalWeather\NationalWeatherService.wsdl" />
+    <None Include="Service References\NationalWeather\NationalWeatherService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NationalWeather\NationalWeatherService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NationalWeather\NationalWeatherService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\POIService\POIService.wsdl" />
     <None Include="Service References\POIService\POIService.xsd">
       <SubType>Designer</SubType>
@@ -128,6 +149,18 @@
     <None Include="Service References\xmlAuthServ\configuration91.svcinfo" />
     <None Include="Service References\xmlAuthServ\configuration.svcinfo" />
     <None Include="Service References\xmlAuthServ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\configuration91.svcinfo" />
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\configuration.svcinfo" />
+    <None Include="Service References\ClosestRestaurantAndNaturalHazards\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\NationalWeather\configuration91.svcinfo" />
+    <None Include="Service References\NationalWeather\configuration.svcinfo" />
+    <None Include="Service References\NationalWeather\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -160,6 +193,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="serviceDirectory.aspx.cs">
+      <DependentUpon>serviceDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="serviceDirectory.aspx.designer.cs">
+      <DependentUpon>serviceDirectory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,6 +237,16 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ClosestRestaurantAndNaturalHazards\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NationalWeather\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\POIService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -226,6 +276,8 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ClosestRestaurantAndNaturalHazards\" />
+    <WCFMetadataStorage Include="Service References\NationalWeather\" />
     <WCFMetadataStorage Include="Service References\POIService\" />
     <WCFMetadataStorage Include="Service References\xmlAuthServ\" />
   </ItemGroup>
