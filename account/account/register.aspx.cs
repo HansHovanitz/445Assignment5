@@ -26,8 +26,6 @@ namespace account
                 //Create new cookie for the new member - done by Beverly Emmons
                 HttpCookie newCookie = new HttpCookie("memberLogin");
                 newCookie["username"] = txtusername.Text;
-                newCookie["password"] = txtpassword.Text;
-                newCookie["email"] = txtemail.Text;
                 newCookie.Expires = DateTime.Now.AddMonths(6);
                 Response.Cookies.Add(newCookie);
                 //end Beverly's code

@@ -9,7 +9,7 @@ using EncryptDecrypt;
 
 namespace account
 {
-    public partial class member : System.Web.UI.Page
+    public partial class Staff : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

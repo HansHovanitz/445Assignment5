@@ -106,7 +106,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="serviceDirectory.aspx" />
     <Content Include="login.aspx" />
     <Content Include="member.aspx" />
     <Content Include="packages.config" />
@@ -211,13 +210,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="serviceDirectory.aspx.cs">
-      <DependentUpon>serviceDirectory.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="serviceDirectory.aspx.designer.cs">
-      <DependentUpon>serviceDirectory.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

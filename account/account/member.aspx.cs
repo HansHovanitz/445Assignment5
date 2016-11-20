@@ -15,6 +15,11 @@ namespace account
   {
     protected void Page_Load(object sender, EventArgs e)
     {
+      if (Session.Count == 0) //user has not logged in
+      {
+        Response.Redirect("~/login.aspx");
+      }
+
       //If cookie has been set, auto fill the username for the member login - done by Beverly Emmons
       HttpCookie myCookies = Request.Cookies["memberLogin"];
       if ((myCookies != null) && (myCookies["username"] != ""))
@@ -258,8 +263,8 @@ namespace account
 
         if (forecast != null)
         {
-          Label4.Text = forecast[0] + "</br>" + forecast[1] + "</br>" + forecast[2] + "</br>" + forecast[3] + "</br>" +
-                        forecast[4] + "</br>";
+          Label4.Text = forecast[0] + "<br/>" + forecast[1] + "<br/>" + forecast[2] + "<br/>" + forecast[3] + "<br/>" +
+                        forecast[4] + "<br/>";
         }
         else
         {

@@ -44,14 +44,15 @@ namespace account
                     {
                         //If the user doesn't have a cookie on the browser,
                         //Create a new cookie for them - done by Beverly Emmons
-                        if ((myCookies == null) || (myCookies["username"] == "") || myCookies["password"] == "")
+                        if ((myCookies == null) || (myCookies["username"] == ""))
                         {
                           HttpCookie newCookie = new HttpCookie("memberLogin");
                           newCookie["username"] = txtusername.Text;
-                          newCookie["password"] = txtpassword.Text;
                           newCookie.Expires = DateTime.Now.AddMonths(6);
                           Response.Cookies.Add(newCookie);
                         }
+
+                        Session["loggedIn"] = "member";
                         //end Beverly's Code
 
                         Response.Redirect("~/member.aspx");
