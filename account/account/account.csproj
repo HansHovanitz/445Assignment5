@@ -99,13 +99,13 @@
   <ItemGroup>
     <Content Include="App_Data\Member.xml" />
     <Content Include="css\register.css" />
-    <None Include="Service References\CrimeService\configuration.svcinfo" />
+    <None Include="Service References\CrimeService\Service1.disco" />
     <None Include="Service References\CrimeService\configuration91.svcinfo" />
+    <None Include="Service References\CrimeService\configuration.svcinfo" />
     <None Include="Service References\CrimeService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference1.cs</LastGenOutput>
+      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\CrimeService\Service1.disco" />
     <Content Include="serviceDirectory.aspx" />
     <Content Include="login.aspx" />
     <Content Include="member.aspx" />
@@ -207,8 +207,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service References\CrimeService\Reference.cs" />
-    <Compile Include="Service References\CrimeService\Reference1.cs">
+    <Compile Include="Service References\CrimeService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -297,6 +296,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ClosestRestaurantAndNaturalHazards\" />
+    <WCFMetadataStorage Include="Service References\CrimeService\" />
     <WCFMetadataStorage Include="Service References\NationalWeather\" />
     <WCFMetadataStorage Include="Service References\POIService\" />
     <WCFMetadataStorage Include="Service References\xmlAuthServ\" />
