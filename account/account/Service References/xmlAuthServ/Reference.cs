@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System;
+
 namespace account.xmlAuthServ {
     
     
@@ -83,6 +85,11 @@ namespace account.xmlAuthServ {
         
         public System.Threading.Tasks.Task<string> LoginAsync(string userName, string password) {
             return base.Channel.LoginAsync(userName, password);
+        }
+
+        internal object RegisterationStaff(string text1, string text2, string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

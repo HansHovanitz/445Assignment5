@@ -11,7 +11,20 @@ namespace account
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            // Useful method stuff here
+            if (HttpContext.Current.Session != null)
+            {
+                if (Session.Count == 0) //user has not logged in
+                {
+                    if (Session["loggedIn"] != "member")
+                    {
+                        Response.Redirect("~/member.aspx");
+                    }
+                    else if (Session["loggedIn"] != "staff")
+                    {
+                        Response.Redirect("~/staff.aspx");
+                    }
+                }
+            }
         }
 
         protected void Application_BeginRequest()

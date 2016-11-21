@@ -99,6 +99,7 @@
   <ItemGroup>
     <Content Include="App_Data\Member.xml" />
     <Content Include="css\register.css" />
+    <Content Include="staff.aspx" />
     <None Include="Service References\CrimeService\Service1.disco" />
     <None Include="Service References\CrimeService\configuration91.svcinfo" />
     <None Include="Service References\CrimeService\configuration.svcinfo" />
@@ -274,6 +275,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="staff.aspx.cs">
+      <DependentUpon>staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff.aspx.designer.cs">
+      <DependentUpon>staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="xmlAuth.cs" />
   </ItemGroup>
