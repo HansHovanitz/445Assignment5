@@ -97,6 +97,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Staff.xml" />
     <Content Include="App_Data\Member.xml" />
     <Content Include="css\register.css" />
     <Content Include="staff.aspx" />
