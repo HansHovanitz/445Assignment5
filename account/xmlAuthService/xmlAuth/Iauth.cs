@@ -18,6 +18,9 @@ namespace xmlAuth
         string Registeration(string userName, string email, string password);
 
         [OperationContract]
+        string RegisterationStaff(string userName, string email, string password);
+
+        [OperationContract]
         string Login(string userName, string password);
     }
 }

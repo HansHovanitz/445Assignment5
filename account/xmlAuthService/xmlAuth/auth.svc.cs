@@ -60,6 +60,40 @@ namespace xmlAuth
             return Result;
         }
 
+        public string RegisterationStaff(string userName, string email, string password)
+        {
+            try
+            {
+                XDocument docs = XDocument.Load(System.Web.HttpContext.Current.Server.MapPath("/App_Data/Staff.xml"));
+                count = docs.Descendants("MemberCredentials")
+                .Where(id => id.Attribute("UserName").Value == userName)
+                .Count();
+                if (count == 0)
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load(System.Web.HttpContext.Current.Server.MapPath("/App_Data/Staff.xml"));
+                    XmlElement MemberCredentials = doc.CreateElement("MemberCredentials");
+                    MemberCredentials.SetAttribute("UserName", userName);
+                    MemberCredentials.SetAttribute("Email", email);
+                    MemberCredentials.SetAttribute("Password", password);
+                    doc.DocumentElement.AppendChild(MemberCredentials);
+                    doc.Save(System.Web.HttpContext.Current.Server.MapPath("/App_Data/Staff.xml"));
+                    // -------------- Successful Save = 1 ------------
+                    Result = "1";
+                }
+                else
+                {
+                    // --------------User Name Already Exists  = 0 -----------------
+                    Result = "0";
+                }
+            }
+            catch (Exception ex)
+            {
+                return "There was an error. " + ex;
+            }
+            return Result;
+        }
+
         public string Login(string userName, string password)
         {
             try
@@ -78,6 +112,24 @@ namespace xmlAuth
             {
                 return "There was an error. " + ex;
             }
+
+            try
+            {
+                XDocument doc = XDocument.Load(System.Web.HttpContext.Current.Server.MapPath("/App_Data/Staff.xml"));
+                count = doc.Descendants("MemberCredentials")
+                .Where(id => id.Attribute("UserName").Value == userName)
+                .Count();
+                Result = (count == 0) ? "0" : "1"; //--------User Name Does Not Exist  = 0 -----------
+                if (count > 0)
+                {
+                    Result = ((doc.Descendants("MemberCredentials").Where(id => id.Attribute("UserName").Value == userName && id.Attribute("Password").Value == password).Count()) > 0) ? "3" : "2"; // "Success = 3"    ----- "Invalid Password  = 2"
+                }
+            }
+            catch (Exception ex)
+            {
+                return "There was an error. " + ex;
+            }
+
             return Result;
         }
     }

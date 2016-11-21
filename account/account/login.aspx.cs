@@ -64,6 +64,24 @@ namespace account
                         lblPasswordError.Text = "Invalid Password";
                         break;
                     }
+                case 3:
+                    {
+                        //If the user doesn't have a cookie on the browser,
+                        //Create a new cookie for them - done by Beverly Emmons
+                        if ((myCookies == null) || (myCookies["username"] == ""))
+                        {
+                            HttpCookie newCookie = new HttpCookie("memberLogin");
+                            newCookie["username"] = txtusername.Text;
+                            newCookie.Expires = DateTime.Now.AddMonths(6);
+                            Response.Cookies.Add(newCookie);
+                        }
+
+                        Session["loggedIn"] = "staff";
+                        //end Beverly's Code
+
+                        Response.Redirect("~/staff.aspx");
+                        break;
+                    }
                 default:
                     {
                         Console.WriteLine("Something Went Wrong");
