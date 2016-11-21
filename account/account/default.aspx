@@ -16,7 +16,7 @@
             padding: 0 10px; /* To give a bit of padding on the left and right */
             border-bottom: none;
         }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <div class="panel-title text-center">
@@ -60,9 +60,8 @@
               Accessing the member page before logging in or after logging out will redirect the user to the login page.
               <br/>
               <br/>
-              The link to the staff page will require a staff login. The staff login username is: JOSH PUT STAFF INFO HERE!!. The staff login password is:
-              JOSH PUT STAFF INFO HERE!!. Logging into the staff page will allow the staff member to add additional staff members to the XML file.
-              <br/>
+              The link to the staff page will require a staff login. The staff login username is: &#39;TA&#39;. The staff login password is:
+              &#39;CSE445598ta!&#39;. Logging into the staff page will allow the staff member to add additional staff members to the XML file. <br/>
               <br/>
               The service directory page is a list of the components and their creators, just like in assignment 3.
               <br/>
@@ -98,8 +97,7 @@
             redirected to the member page. Now you can come and go from the member page without being asked to log in again (session state works!). Plus, you will see
             your username displayed at the top of the member page (cookies work!).
             <h4>Testing the staff page:</h4>
-            JOSH TODO
-          </div>
+              After logging in to the staff page using the above username and password simply enter a new username and password and click the button to add another staff account. This new account can also be used to access the staff page and add new accounts so follow the above testing procedure to test the new login with the staff account after clearing the session state and cookies. You should also be able to come and go from the staff page without being asked to log in again (session states work here as well)</div>
         <!-- End Beverly Emmons' Code -->
       </div>
         <div class="main-login main-center">

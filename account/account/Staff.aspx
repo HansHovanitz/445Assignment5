@@ -6,6 +6,10 @@
     <div class="jumbotron">
         
         <h1>Staff Services</h1>
+
+        <asp:Label ID="loggedInAs" runat="server" Text="Logged in as: "></asp:Label>
+        <br />
+        <br />
         ***Register Staff Account***<br />
         (Input) Enter Username:
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>

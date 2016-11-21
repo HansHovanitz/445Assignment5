@@ -13,7 +13,18 @@ namespace account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session.Count == 0 && Session["loggedIn"] != "staff") //user has not logged in as staff
+            {
+                Response.Redirect("~/login.aspx");
+            }
 
+            //If cookie has been set, auto fill the username for the member login - done by Beverly Emmons
+            HttpCookie myCookies = Request.Cookies["memberLogin"];
+            if ((myCookies != null) && (myCookies["username"] != ""))
+            {
+                loggedInAs.Text += myCookies["username"];
+            }
+            //End Josh's copy of Beverly's Code
         }
 
         protected void btnPOI_Click(object sender, EventArgs e)
