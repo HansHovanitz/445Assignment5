@@ -40,7 +40,45 @@
         <br />
         (Output) Crime Number: <asp:Label ID="LabelCA" runat="server" Text="Crime Number will appear here"></asp:Label>
         <br />
+
+        <h3>Stemming: Enter a Word or Words. The result is a list of words that are the Stems of the given words, Stems do not have to be actual words.</h3>
+        <h4>&nbsp;GetStem (String): String</h4>
+        <h4>URL of service: <a href="http://webstrar8.fulton.asu.edu/Page6/Service1.svc">http://webstrar8.fulton.asu.edu/Page7/ServiceStemming.svc</a></h4>
+        <br />
+        (Input) Enter Word(s):
+        <asp:TextBox ID="TextBoxCA0" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="ButtonCA0" runat="server" OnClick="ButtonStemming_Click" Text="Invoke" />
+        <br />
+        (Output) Stems: <asp:Label ID="LabelCA0" runat="server" Text="Stems will appear here"></asp:Label>
+        <br />
+
+        <h3>Nearest Store: Enter a store name and a Zipcode. The result is a string representing the street adress of the store.</h3>
+        <h4>&nbsp;GetNearestStore (String, String): String</h4>
+        <h4>URL of service: <a href="http://webstrar8.fulton.asu.edu/Page6/Service1.svc">http://webstrar8.fulton.asu.edu/Page8/ServiceNearestStore.svc</a></h4>
+        <br />
+        (Input) Enter a Store:
+        <asp:TextBox ID="TextBoxCA1" runat="server"></asp:TextBox>
+        <br />
+        (Input) Enter a Zipcode:
+        <asp:TextBox ID="TextBoxCA3" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="ButtonCA1" runat="server" OnClick="ButtonStore_Click" Text="Invoke" />
+        <br />
+        (Output) Store Location: <asp:Label ID="LabelCA1" runat="server" Text="Store location will appear here"></asp:Label>
         <br/>
+
+      
+        <h3>Number 2 Words: Enter a number The result is a string representing an equivelent number using words where possible</h3>
+        <h4>&nbsp;Number2Words (String): String</h4>
+        <h4>URL of service: <a href="http://webstrar8.fulton.asu.edu/Page6/Service1.svc">http://webstrar8.fulton.asu.edu/Page9/ServiceNumber2Words.svc</a></h4>
+        <br />
+        (Input) Enter Number:
+        <asp:TextBox ID="TextBoxCA2" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="ButtonCA2" runat="server" OnClick="ButtonNumber_Click" Text="Invoke" />
+        <br />
+        (Output) Number: <asp:Label ID="LabelCA2" runat="server" Text="Number will appear here"></asp:Label>
 
       
           <!-- Begin Beverly Emmons' Code-->

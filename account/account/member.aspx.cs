@@ -362,5 +362,38 @@ namespace account
             
             crimeClient.Close();
         }
+
+        protected void ButtonStemming_Click(object sender, EventArgs e)
+        {
+
+            ServiceStemming.ServiceStemmingClient stemClient = new ServiceStemming.ServiceStemmingClient();
+
+            string value = stemClient.GetStem(TextBoxCA0.Text);
+            LabelCA0.Text = value.ToString();
+
+            stemClient.Close();
+        }
+
+        protected void ButtonStore_Click(object sender, EventArgs e)
+        {
+
+            ServiceNearestStore.ServiceNearestStoreClient storeClient = new ServiceNearestStore.ServiceNearestStoreClient();
+
+            String value = storeClient.GetNearestStore(TextBoxCA1.Text, TextBoxCA3.Text);
+            LabelCA1.Text = value.ToString();
+
+            storeClient.Close();
+        }
+
+        protected void ButtonNumber_Click(object sender, EventArgs e)
+        {
+
+            ServiceNumber2Words.ServiceNumber2WordsClient numberClient = new ServiceNumber2Words.ServiceNumber2WordsClient();
+
+            String value = numberClient.Number2Words(TextBoxCA2.Text);
+            LabelCA2.Text = value.ToString();
+
+            numberClient.Close();
+        }
     }
   }
